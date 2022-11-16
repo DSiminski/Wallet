@@ -1,26 +1,33 @@
 import * as S from './styles';
-import { useState } from 'react';
+import { useState } from "react";
 
-export const Header = () => {
-    const[openSideBar , setOpenSideBar] = useState(false);
-    return(
-        <header>
-            <S.HeaderContainer>
-                <S.Container>
-                    <div className='Olá!'>
-                        <h1>
-                            Olá!
-                        </h1>
-                    </div>
-                <div className='Message'>
-                    <h2>
-                        Seja Bem-Vindo a sua Carteira!
-                    </h2>
-                </div>
-                </S.Container>
-            </S.HeaderContainer>
-    </header>
-    )
-    
+interface HeaderProps {
+  title?: string;
+  isLogin?: boolean;
+  style?: React.CSSProperties;
 }
+
+export const Header = ({ title, isLogin, style }: HeaderProps) => {
+  return (
+    <header>
+      <div style={style}>
+        <S.HeaderContainer>
+          <S.Container>
+            {isLogin ? (
+                <h2>
+              <S.Message>
+                Hello
+                <br />
+                {title}
+              </S.Message>
+              </h2>
+            ) : (
+             <h2> <S.Message>{title}</S.Message>  </h2> 
+            )}
+          </S.Container>
+        </S.HeaderContainer>
+      </div>
+    </header>
+  );
+};
 //Testando// 

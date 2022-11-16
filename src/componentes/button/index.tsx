@@ -22,7 +22,7 @@ interface ButtonProps {
 export const ButtonComponent = ({
   disabled,
   title,
-  themeColor = 'rgb(57, 71, 203)',
+  themeColor = '#6a7dfe',
   onClick,
   width,
   height,

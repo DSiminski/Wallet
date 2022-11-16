@@ -28,10 +28,10 @@ body, html {
 .wrap-login {
   width: 390px;
   background-color: #fff;
-  border-radius: 16px;
+  border-radius: 80px;
   overflow: hidden;
-  padding: 150px 55px 33px 55px;
-  border-color: rgb(187, 186, 186);
+  padding: 95px 80px 80px 80px;
+  border-color: #6a7dfe;
   border-style: solid;
 }
 

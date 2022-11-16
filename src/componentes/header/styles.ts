@@ -1,24 +1,19 @@
 import styled from 'styled-components';
 
-
 export const HeaderContainer = styled.div`
-  background-color: #000080;
+
   width: 100%;
-  height: 4rem;
-  display: flex;
+  height: 8rem;
+  display: block;
   justify-content: center;
 `;
-export const Container = styled.div`
-  background-color: #000080;
-  width: 100%;
-  height: 4rem;
-  display: flex;
-  justify-content: center;
 
+export const Container = styled.div`
+ padding : 60px 10px 10px 10px; 
 `;
 
 export const Message = styled.div`
  font-family: Helvetica;
- color: #000000;
- display: flex;
+ color: #ffffff;
+ align-items: left; 
 `;

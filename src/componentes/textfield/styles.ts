@@ -8,17 +8,17 @@ export const StyledTextField = styled(TextField)({
     
   },
   '& .MuiInput-underline:after': {
-    borderBottomColor: '#9B4A46',
+    borderBottomColor: '##6a7dfe',
   },
   '& .MuiOutlinedInput-root': {
     '& fieldset': {
-      borderColor: '#C2C2C2',
+      borderColor: '#6a7dfe',
     },
     '&:hover fieldset': {
-      borderColor: '#7A0000',
+      borderColor: '#6a7dfe',
     },
     '&.Mui-focused fieldset': {
-      borderColor: '#9B4A46',
+      borderColor: '#6a7dfe',
     },
   },
 });
