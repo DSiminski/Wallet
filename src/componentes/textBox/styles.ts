@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 
 export const Container = styled.div`
-width:20%;
+width:100%;
 background-color: #fff;
 border-radius: 80px;
 overflow: hidden;
-padding: 8px ;
+padding: 20px ;
 border-color: #6a7dfe;
 border-style: solid;
 `;
@@ -20,3 +20,4 @@ export const Value = styled.div`
 export const Title = styled.div`
  padding: 10px;
 `;
+
