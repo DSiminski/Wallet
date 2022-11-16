@@ -4,12 +4,11 @@ import "./loginStyle.css";
 import { ButtonComponent } from "../../componentes/button";
 import { TextFieldComponent } from "../../componentes/textfield";
 import { Header } from "../../componentes/header";
-import { BasicTable } from "../../componentes/BasicTable"
+import { TextBox } from "../../componentes/textBox";
 function handleForm() {}
 
 const Login = () => {
   return (
-    
     <div className="container">
       <Header
         style={{ backgroundColor: "rgb(57, 71, 203)" }}
@@ -20,11 +19,19 @@ const Login = () => {
         <div className="wrap-login">
           <form className="login-form">
             <div className="wrap-input">
-              <TextFieldComponent style={{ width: "100%" }} label="Email" type="text" />
+              <TextFieldComponent
+                style={{ width: "100%" }}
+                label="Email"
+                type="text"
+              />
             </div>
 
             <div className="wrap-input">
-              <TextFieldComponent style={{ width: "100%", }} label="Senha" type="password"/>
+              <TextFieldComponent
+                style={{ width: "100%" }}
+                label="Senha"
+                type="password"
+              />
             </div>
 
             <div className="container-login-form-btn">
@@ -37,6 +44,11 @@ const Login = () => {
           </form>
         </div>
       </div>
+      <TextBox
+            style={{ backgroundColor: "rgb(57, 71, 203)" }}
+            title="Portfolio balance"
+            valor="RS500,00"
+          />
     </div>
   );
 };
